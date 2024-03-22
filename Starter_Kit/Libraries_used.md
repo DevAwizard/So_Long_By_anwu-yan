@@ -1,7 +1,5 @@
 # Essential C Libraries 
 
-To use the functions open, close, read, write, malloc, free, perror, strerror, and exit in a C program, you'll typically include the following libraries:
-
 - **`<fcntl.h>`** - For the open function.
   
 - **`<unistd.h>`** - For read, close, and write functions.
