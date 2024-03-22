@@ -16,6 +16,7 @@ P for the player's starting position.
 
 ### Main function overview
 
+```c
 int main(int argc, char **argv) 
 {
     // Step 1: Check command-line arguments
@@ -43,5 +44,6 @@ int main(int argc, char **argv)
 
     return 0; // Example: assuming the map is valid
 }
+```
 
 ---
