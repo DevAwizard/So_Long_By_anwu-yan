@@ -113,24 +113,48 @@ so_long/
 ├── project/
 │   ├── includes/       # Header files 
 │   ├── srcs/           # Source files of C code, main, mini functions, and inside, minilib and libft
-│   │   ├── ft_draw_map.c    # Draws the map
-│   │   ├── ft_error.c       # Handles errors
-│   │   ├── ft_error_map.c   # Handles map-specific errors
-│   │   ├── ft_free_game.c   # Frees game resources
-│   │   ├── ft_keyboard.c    # Manages keyboard input
-│   │   ├── ft_play.c        # Main gameplay logic
-│   │   ├── main.c           # Entry point of the game
+│   │   ├── ft_draw_map.c    # Key file: Draws the map
+│   │   ├── ft_error.c       # Key file: Handles errors
+│   │   ├── ft_error_map.c   # Key file: Handles map-specific errors
+│   │   ├── ft_free_game.c   # Key file: Frees game resources
+│   │   ├── ft_keyboard.c    # Key file: Manages keyboard input
+│   │   ├── ft_play.c        # Key file: Main gameplay logic
+│   │   ├── main.c           # Key file: Entry point of the game
 │   │   ├── minilib/         # Mini library functions
 │   │   └── libft/           # Libft functions
-│   ├── xpm/            # Pixel images, including a 'resources' subfolder with PNG files
+│   ├── xpm/                 # Pixel images, including a 'resources' subfolder with PNG files
+│   │   ├── C.xpm            # Coin image
+│   │   ├── Exit.xpm         # Exit image
+│   │   ├── Floor.xpm        # Floor image
+│   │   ├── P.xpm            # Player image
+│   │   ├── Wall.xpm         # Wall image
+│   │   └── resources/       # PNG versions of XPM images
+│   │       ├── C.png
+│   │       ├── Exit.png
+│   │       ├── Floor.png
+│   │       ├── P.png
+│   │       ├── Wall.png
 │   ├── maps/           # Map files
+│   │   ├── map.ber
+│   │   ├── map1.ber
+│   │   ├── map2.ber
+│   │   ├── map3.ber
+│   │   ├── map_big.ber
+│   │   ├── map_no_collection.ber
+│   │   ├── map_no_exit.ber
+│   │   ├── map_no_player.ber
+│   │   ├── map_no_rect.ber
+│   │   ├── map_wall_error.ber
 │   ├── Makefile        # Makefile to compile the project
 │   └── README.md       # Project documentation
 
 
+
 ```
 
-#### Key files (need to change)
+#### Key files
+
+**Srcs**
 
 - **`main.c`**: The entry point of the game, responsible for initializing the game and starting the main loop.
 
@@ -145,6 +169,29 @@ so_long/
 - **`ft_keyboard.c`**: Manages user input from the keyboard, including key press events and controls.
 
 - **`ft_play.c`**: Contains the main game logic and gameplay functions.
+
+
+**Maps**
+
+- **`map.ber`**: Default map file used in the game.
+
+- **`map1.ber`**: Alternate map file for additional level or variation in the game.
+
+- **`map2.ber`**: Another alternate map file for further level variation.
+
+- **`map3.ber`**: Additional map file for yet another level or variation.
+
+- **`map_big.ber`**: Larger map file designed for a more extensive game level.
+
+- **`map_no_collection.ber`**: Map file designed to test the game without collectible items.
+
+- **`map_no_exit.ber`**: Map file designed to test the game without an exit.
+
+- **`map_no_player.ber`**: Map file designed to test the game without a player starting point.
+
+- **`map_no_rect.ber`**: Map file with a non-rectangular shape to test map validation.
+
+- **`map_wall_error.ber`**: Map file with wall errors to test error handling in map validation.
 
 ### Implementation 
 
