@@ -108,6 +108,7 @@ The "so_long" project is a 2D game developed as part of the curriculum at 42. Th
 
 ### Code structure
 
+```bash
 so_long/
 ├── project/
 │   ├── includes/       # Header files 
@@ -116,7 +117,7 @@ so_long/
 │   ├── maps/           # Map files
 │   ├── Makefile        # Makefile to compile the project
 │   └── README.md       # Project documentation
-
+```
 
 #### Key files (need to change)
 
