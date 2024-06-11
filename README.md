@@ -113,13 +113,13 @@ so_long/
 ├── project/
 │   ├── includes/       # Header files 
 │   ├── srcs/           # Source files of C code, main, mini functions, and inside, minilib and libft
-│   │   ├── ft_draw_map.c    # Key file: Draws the map
-│   │   ├── ft_error.c       # Key file: Handles errors
-│   │   ├── ft_error_map.c   # Key file: Handles map-specific errors
-│   │   ├── ft_free_game.c   # Key file: Frees game resources
-│   │   ├── ft_keyboard.c    # Key file: Manages keyboard input
-│   │   ├── ft_play.c        # Key file: Main gameplay logic
-│   │   ├── main.c           # Key file: Entry point of the game
+│   │   ├── ft_draw_map.c    # Draws the map
+│   │   ├── ft_error.c       # Handles errors
+│   │   ├── ft_error_map.c   # Handles map-specific errors
+│   │   ├── ft_free_game.c   # Frees game resources
+│   │   ├── ft_keyboard.c    # Manages keyboard input
+│   │   ├── ft_play.c        # Main gameplay logic
+│   │   ├── main.c           # Entry point of the game
 │   │   ├── minilib/         # Mini library functions
 │   │   └── libft/           # Libft functions
 │   ├── xpm/            # Pixel images, including a 'resources' subfolder with PNG files
