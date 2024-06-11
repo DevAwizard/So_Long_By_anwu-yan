@@ -5,23 +5,29 @@
 </div>
 
 
-<div align="center"><img src="https://img.shields.io/badge/42-%23000000.svg?&style=for-the-badge&logo=42&logoColor=white" /> <img src="https://img.shields.io/badge/c-%23A8B9CC.svg?&style=for-the-badge&logo=c&logoColor=black" /> <img src="https://img.shields.io/badge/markdown-%23000000.svg?&style=for-the-badge&logo=markdown&logoColor=white"</div>
+<img src="https://img.shields.io/badge/42-%23000000.svg?&style=for-the-badge&logo=42&logoColor=white" /> <img src="https://img.shields.io/badge/c-%23A8B9CC.svg?&style=for-the-badge&logo=c&logoColor=black" /> <img src="https://img.shields.io/badge/markdown-%23000000.svg?&style=for-the-badge&logo=markdown&logoColor=white"
 
 ### Table of Contents
 
 1. [Description](#description)
+
 2. [Objectives](#objectives)
+
 3. [Features](#features)
    - [Game Mechanics](#game-mechanics)
    - [Graphics](#graphics)
    - [Sound (Bonus)](#sound-bonus)
+
 4. [Development Environment](#development-environment)
    - [Tools and Technologies](#tools-and-technologies)
    - [System Requirements](#system-requirements)
+
 5. [Code Structure](#code-structure)
    - [Directory Structure](#directory-structure)
    - [Key Files](#key-files)
+
 6. [Implementation](#implementation)
+
 7. [Testing](#testing)
 
 
