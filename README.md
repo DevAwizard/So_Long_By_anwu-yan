@@ -118,26 +118,33 @@ so_long/
 │   │   ├── ft_error_map.c   # Key file: Handles map-specific errors
 │   │   ├── ft_free_game.c   # Key file: Frees game resources
 │   │   ├── ft_keyboard.c    # Key file: Manages keyboard input
-│   │   ├── ft_play.c        # Key file: Main game play logic
-│   │   └── main.c           # Key file: Entry point of the game
+│   │   ├── ft_play.c        # Key file: Main gameplay logic
+│   │   ├── main.c           # Key file: Entry point of the game
+│   │   ├── minilib/         # Mini library functions
+│   │   └── libft/           # Libft functions
 │   ├── xpm/            # Pixel images, including a 'resources' subfolder with PNG files
 │   ├── maps/           # Map files
 │   ├── Makefile        # Makefile to compile the project
 │   └── README.md       # Project documentation
 
+
 ```
 
 #### Key files (need to change)
 
-- main.c: The entry point of the game.
+- **`main.c`**: The entry point of the game, responsible for initializing the game and starting the main loop.
 
-- game.c: Contains the main game loop and logic.
+- **`ft_draw_map.c`**: Contains functions responsible for drawing and rendering the game map on the screen.
 
-- graphics.c: Handles rendering of graphics and animations.
+- **`ft_error.c`**: Handles general error reporting and management within the game.
 
-- input.c: Manages user inputs and controls.
+- **`ft_error_map.c`**: Manages errors specific to loading and parsing map files.
 
-- map.c: Loads and parses map files.
+- **`ft_free_game.c`**:  Includes functions for freeing resources and memory used by the game to prevent memory leaks.
+
+- **`ft_keyboard.c`**: Manages user input from the keyboard, including key press events and controls.
+
+- **`ft_play.c`**: Contains the main game logic and gameplay functions.
 
 ### Implementation 
 
