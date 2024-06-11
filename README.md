@@ -108,17 +108,15 @@ The "so_long" project is a 2D game developed as part of the curriculum at 42. Th
 
 ### Code structure
 
-#### Directory Structure
-
-```bash
 so_long/
-├── includes/       # Header files
-├── srcs/           # Source files
-├── assets/         # Images and sound files
-├── maps/           # Map files
-├── Makefile        # Makefile to compile the project
-└── README.md       # Project documentation
-```
+├── project/
+│   ├── includes/       # Header files 
+│   ├── srcs/           # Source files of C code, main, mini functions, and inside, minilib and libft
+│   ├── xpm/            # Pixel images, including a 'resources' subfolder with PNG files
+│   ├── maps/           # Map files
+│   ├── Makefile        # Makefile to compile the project
+│   └── README.md       # Project documentation
+
 
 #### Key files (need to change)
 
