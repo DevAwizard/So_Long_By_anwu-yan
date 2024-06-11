@@ -45,7 +45,7 @@ https://github.com/DevAwizard/So_Long_By_anwu-yan/assets/153505451/ef4667c1-6e57
 
 ### Description
 
-The "so_long" project is a 2D game developed as part of the curriculum at 42. The game is a simple graphical adventure where the player navigates through a map, collecting items and avoiding obstacles. The main objective is to reach the exit after collecting all necessary items.
+The **"`so_long"`** project is a 2D game developed as part of the curriculum at 42. The game is a simple graphical adventure where the player navigates through a map, collecting items and avoiding obstacles. The main objective is to reach the exit after collecting all necessary items.
 
 ### Objectives
 
