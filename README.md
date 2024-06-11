@@ -7,8 +7,6 @@
 </div>
 
 
-
-## Sample of solong
 https://github.com/DevAwizard/So_Long_By_anwu-yan/assets/153505451/ef4667c1-6e57-462f-9dbe-22a59cbccdc9
 
 
