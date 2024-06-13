@@ -199,7 +199,7 @@ The implementation of the "so_long" project is divided into two key parts: **`Pa
 
 
 
-#### **`1. Parsing`**
+#### `1. Parsing`
 
 **What is Parsing?**
 
@@ -208,50 +208,102 @@ Parsing is the process of analyzing a sequence of input data to determine its gr
 
 **Key Aspects of Parsing in the "so_long" Project:**
 
-- Verify Argument Count: Ensure the number of arguments is exactly 2.
 
-- Check Filename Length: Verify that the length of the second argument is sufficient for a filename.
+1. **`Verify Argument Count`**: Ensure the number of arguments is exactly 2.
 
-- Validate File Extension: Check if the file extension is ".ber".
+2. **`Check Filename Length`**: Verify that the length of the second argument is sufficient for a filename.
 
-- Open the .ber File: Open the specified .ber file for reading.
+3. **`Validate File Extension`**: Check if the file extension is ".ber".
 
-- Read .ber File: Create a function to read the contents of the .ber file.
+4. **`Open the .ber File`**: Open the specified .ber file for reading.
 
-- Memory Allocation: Once the number of characters in the .ber map is known, allocate the necessary memory. 
+5. **`Read .ber File`**: Create a function to read the contents of the .ber file.
 
-- Close the .ber File: Close the .ber file after the initial read.
+6. **`Memory Allocation`**: Allocate necessary memory based on the number of characters in the .ber map.
 
-- Reopen the .ber File: Reopen the .ber file to read its contents again.
+7. **`Close the .ber File`**: Close the .ber file after the initial read.
 
-- Read File Descriptor: Read the file descriptor (fd) to process the file contents.
+8. **`Reopen the .ber File`**: Reopen the .ber file to read its contents again.
 
-- Create error.c:
+9. **`Read File Descriptor`**: Read the file descriptor (fd) to process the file contents.
 
-   - **`Check count characters`**: Function to count and check characters.
-  
-   - **`Check characters_map`**: Function to check valid characters in the map.
-   
-   - **`Check square`**: Ensure the map is square.
-   
-   - **`Check wall map`**: Verify the outer walls of the map are properly constructed.
-   
-   - **`Check Map Playability`**: Ensure the map is playable.
-   
-   - **`Check special characters`**: Specific checks for prohibited characters in the map.
-   
-     - Check for invalid counts of certain characters (C, E, P).
-   
-      - Verify the outer walls of the map are properly constructed.
-   
+10. **Create `error.c`**:
+    - **`Check_count_characters`**: Count and check characters.
+
+    - **`Check characters map`**: Check valid characters in the map.
+
+    - **`Check square`**: Ensure the map is square.
+
+    - **`Check wall map`**: Verify the outer walls of the map.
+
+    - **`Check Map Playability`**: Ensure the map is playable.
+
+    - **`Check special characters`**: Specific checks for prohibited characters in the map.
+
+      - Check for invalid counts of certain characters (C, E, P).
+
       - Confirm there is a valid starting position for the player.
 
+12. **`Line-by-Line Parsing`**: Parse the file line by line to process and validate each part of the map individually.
+
+13. **`Whitespace Handling`**: Handle and ignore any irrelevant whitespace or comments in the input file.
+
+14. **`Map Dimensions Check`**: Ensure that the map dimensions are consistent and valid according to the game's requirements.
+
+15. **`Pathfinding Validation`**: Implement an algorithm to check if there is a valid path from the player start position to all collectible items (C) and the exit (E).
+
+16. **`Error Messages`**: Provide clear and informative error messages for different types of parsing errors to help with debugging.
+
+17. **`Boundary Checks`**: Ensure that all accesses to the map data are within valid boundaries to prevent out-of-bounds errors.
+
+18. **`Performance Considerations`**: Optimize the parsing process for performance, especially for larger maps, to ensure it runs efficiently.
 
 
+#### `2. Integration`
 
+Integration is the phase where various components such as XPM (X PixMap) handling, keyboard input processing, and the MiniLib library are brought together. This ensures that all individual components work together seamlessly to form the complete application.
 
+**Key Aspects of Integration in the "so_long" Project:**
 
+1. **Download MiniLib**:
 
+   - **Operating Systems**: Ensure compatibility with macOS or Linux.
+
+3. **MiniLib Integration**:
+
+   - **Essential Functions**: Utilize key MiniLib functions such as:
+     - `mlx_init()`: Initialize MiniLib.
+     - `mlx_new_window()`: Create a new window.
+     - `mlx_new_image()`: Create a new image.
+     - `mlx_loop_hook()`: Set up the main loop hook.
+     - `mlx_loop()`: Start the MiniLib event loop.
+     - `mlx_key_hook()`: Handle keyboard events.
+     - `mlx_destroy_window()`: Destroy the window and free associated resources.
+
+4. **Display Images**:
+
+   - **Image Selection**: Choose `.xpm` files for the following game elements:
+     - `wall`
+     - `character`
+     - `floor`
+     - `collectible`
+     - `exit`
+
+5. **Keyboard Handling**:
+   - **Player Movement**: Implement keyboard controls to move the player within the game.
+
+6. **Game Exit Handling**:
+
+   - **Exit Conditions**: Implement functionality to handle game exit through various methods:
+
+     - Pressing `esc`
+
+     - Clicking the window's close button (marking the x)
+
+     - Handling system interrupts like `Ctrl+Z`
+
+7. **Memory Management**:
+   - **Free Allocated Memory**: Ensure all allocated memory is properly freed to avoid memory leaks.
 
 
 ### Testing
@@ -265,6 +317,7 @@ Parsing is the process of analyzing a sequence of input data to determine its gr
 - Game recognizes when all items are collected and the player reaches the exit.
 
 - Game handles invalid inputs gracefully.
+
 
 
 ---
