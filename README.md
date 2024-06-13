@@ -20,6 +20,18 @@ https://github.com/DevAwizard/So_Long_By_anwu-yan/assets/153505451/ef4667c1-6e57
 
 [![Progress](https://img.shields.io/badge/Progress-In%20Progress-yellow)](https://github.com/DevAwizard/Exams_42) 
 
+<table>
+  <tr>
+    <td style="text-align: center;">
+      <a href="https://github.com/DevAwizard/So_Long_By_anwu-yan/assets/153505451/ef4667c1-6e57-462f-9dbe-22a59cbccdc9">
+        <img src="https://img.youtube.com/vi/ef4667c1-6e57-462f-9dbe-22a59cbccdc9/0.jpg" alt="so_long project video" style="width: 200px; height: auto;">
+      </a>
+    </td>
+    <td style="text-align: center;">
+      <a href="https://github.com/yourusername/so_long">Check out the so_long project</a>
+    </td>
+  </tr>
+</table>
 
 
 
