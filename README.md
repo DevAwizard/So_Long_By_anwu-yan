@@ -193,6 +193,66 @@ so_long/
 
 ### Implementation 
 
+**Introduction**
+
+The implementation of the "so_long" project is divided into two key parts: **`Parsing`** and **`Integration`**. This structure ensures a systematic approach to building the application, starting from handling input data to integrating various components necessary for the project's functionality. BBelow is a guide on how to approach the implementation.
+
+
+
+#### **`1. Parsing`**
+
+**What is Parsing?**
+
+Parsing is the process of analyzing a sequence of input data to determine its grammatical structure with respect to a given set of rules or a specific format. In the context of programming, parsing often involves reading data from a file or other input source, interpreting its structure, and converting it into a more usable format for further processing within a program.
+
+
+**Key Aspects of Parsing in the "so_long" Project:**
+
+- Verify Argument Count: Ensure the number of arguments is exactly 2.
+
+- Check Filename Length: Verify that the length of the second argument is sufficient for a filename.
+
+- Validate File Extension: Check if the file extension is ".ber".
+
+- Open the .ber File: Open the specified .ber file for reading.
+
+- Read .ber File: Create a function to read the contents of the .ber file.
+
+- Memory Allocation: Once the number of characters in the .ber map is known, allocate the necessary memory. 
+
+- Close the .ber File: Close the .ber file after the initial read.
+
+- Reopen the .ber File: Reopen the .ber file to read its contents again.
+
+- Read File Descriptor: Read the file descriptor (fd) to process the file contents.
+
+- Create error.c:
+
+   - **`Check count characters`**: Function to count and check characters.
+  
+   - **`Check characters_map`**: Function to check valid characters in the map.
+   
+   - **`Check square`**: Ensure the map is square.
+   
+   - **`Check wall map`**: Verify the outer walls of the map are properly constructed.
+   
+   - **`Check Map Playability`**: Ensure the map is playable.
+   
+   - **`Check special characters`**: Specific checks for prohibited characters in the map.
+   
+     - Check for invalid counts of certain characters (C, E, P).
+   
+      - Verify the outer walls of the map are properly constructed.
+   
+      - Confirm there is a valid starting position for the player.
+
+
+
+
+
+
+
+
 
 ### Testing
 
