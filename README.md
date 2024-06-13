@@ -13,7 +13,6 @@ https://github.com/DevAwizard/So_Long_By_anwu-yan/assets/153505451/ef4667c1-6e57
 
   <tr>
     <td><My project</td>
-    <td>A 2D game project where the player navigates through a map to collect items and reach the exit.</td>
     <td><a href="https://github.com/yourusername/so_long">Check out the so_long project</a></td>
   </tr>
 </table>
