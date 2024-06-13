@@ -9,6 +9,15 @@
 
 https://github.com/DevAwizard/So_Long_By_anwu-yan/assets/153505451/ef4667c1-6e57-462f-9dbe-22a59cbccdc9
 
+<table>
+
+  <tr>
+    <td><My project</td>
+    <td>A 2D game project where the player navigates through a map to collect items and reach the exit.</td>
+    <td><a href="https://github.com/yourusername/so_long">Check out the so_long project</a></td>
+  </tr>
+</table>
+
 [![Progress](https://img.shields.io/badge/Progress-In%20Progress-yellow)](https://github.com/DevAwizard/Exams_42) 
 
 
