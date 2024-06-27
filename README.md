@@ -190,7 +190,7 @@ The implementation of the "so_long" project is divided into two key parts: **`Pa
 
 
 
-#### `1. Parsing`
+#### 1. Parsing
 
 **What is Parsing?**
 
@@ -251,7 +251,9 @@ Parsing is the process of analyzing a sequence of input data to determine its gr
 17. **`Performance Considerations`**: Optimize the parsing process for performance, especially for larger maps, to ensure it runs efficiently.
 
 
-#### `2. Integration`
+#### 2. Integration
+
+**What is integration?**
 
 Integration is the phase where various components such as XPM (X PixMap) handling, keyboard input processing, and the MiniLib library are brought together. This ensures that all individual components work together seamlessly to form the complete application.
 
