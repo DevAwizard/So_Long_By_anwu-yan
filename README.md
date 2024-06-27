@@ -137,10 +137,7 @@ so_long/
 │   │   ├── map_no_player.ber
 │   │   ├── map_no_rect.ber
 │   │   ├── map_wall_error.ber
-│   ├── Makefile        # Makefile to compile the project
-│   └── README.md       # Project documentation
-
-
+│   └── Makefile        # Makefile to compile the project
 
 ```
 
@@ -222,6 +219,7 @@ Parsing is the process of analyzing a sequence of input data to determine its gr
 9. **`Read File Descriptor`**: Read the file descriptor (fd) to process the file contents.
 
 10. **Create `error.c`**:
+    
     - **`Check_count_characters`**: Count and check characters.
 
     - **`Check characters map`**: Check valid characters in the map.
@@ -238,19 +236,19 @@ Parsing is the process of analyzing a sequence of input data to determine its gr
 
       - Confirm there is a valid starting position for the player.
 
-12. **`Line-by-Line Parsing`**: Parse the file line by line to process and validate each part of the map individually.
+11. **`Line-by-Line Parsing`**: Parse the file line by line to process and validate each part of the map individually.
 
-13. **`Whitespace Handling`**: Handle and ignore any irrelevant whitespace or comments in the input file.
+12. **`Whitespace Handling`**: Handle and ignore any irrelevant whitespace or comments in the input file.
 
-14. **`Map Dimensions Check`**: Ensure that the map dimensions are consistent and valid according to the game's requirements.
+13. **`Map Dimensions Check`**: Ensure that the map dimensions are consistent and valid according to the game's requirements.
 
-15. **`Pathfinding Validation`**: Implement an algorithm to check if there is a valid path from the player start position to all collectible items (C) and the exit (E).
+14. **`Pathfinding Validation`**: Implement an algorithm to check if there is a valid path from the player start position to all collectible items (C) and the exit (E).
 
-16. **`Error Messages`**: Provide clear and informative error messages for different types of parsing errors to help with debugging.
+15. **`Error Messages`**: Provide clear and informative error messages for different types of parsing errors to help with debugging.
 
-17. **`Boundary Checks`**: Ensure that all accesses to the map data are within valid boundaries to prevent out-of-bounds errors.
+16. **`Boundary Checks`**: Ensure that all accesses to the map data are within valid boundaries to prevent out-of-bounds errors.
 
-18. **`Performance Considerations`**: Optimize the parsing process for performance, especially for larger maps, to ensure it runs efficiently.
+17. **`Performance Considerations`**: Optimize the parsing process for performance, especially for larger maps, to ensure it runs efficiently.
 
 
 #### `2. Integration`
@@ -266,13 +264,13 @@ Integration is the phase where various components such as XPM (X PixMap) handlin
 3. **MiniLib Integration**:
 
    - **Essential Functions**: Utilize key MiniLib functions such as:
-     - `mlx_init()`: Initialize MiniLib.
-     - `mlx_new_window()`: Create a new window.
-     - `mlx_new_image()`: Create a new image.
-     - `mlx_loop_hook()`: Set up the main loop hook.
-     - `mlx_loop()`: Start the MiniLib event loop.
-     - `mlx_key_hook()`: Handle keyboard events.
-     - `mlx_destroy_window()`: Destroy the window and free associated resources.
+     - **`mlx_init()`**: Initialize MiniLib.
+     - **`mlx_new_window()`**: Create a new window.
+     - **`mlx_new_image()`**: Create a new image.
+     - **`mlx_loop_hook()`**: Set up the main loop hook.
+     - **`mlx_loop()`**: Start the MiniLib event loop.
+     - **`mlx_key_hook()`**: Handle keyboard events.
+     - **`mlx_destroy_window()`**: Destroy the window and free associated resources.
 
 4. **Display Images**:
 
@@ -297,6 +295,7 @@ Integration is the phase where various components such as XPM (X PixMap) handlin
      - Handling system interrupts like `Ctrl+Z`
 
 7. **Memory Management**:
+   
    - **Free Allocated Memory**: Ensure all allocated memory is properly freed to avoid memory leaks.
 
 
@@ -311,7 +310,6 @@ Integration is the phase where various components such as XPM (X PixMap) handlin
 - Game recognizes when all items are collected and the player reaches the exit.
 
 - Game handles invalid inputs gracefully.
-
 
 
 ---
