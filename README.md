@@ -284,6 +284,8 @@ Integration is the phase where various components such as XPM (X PixMap) handlin
      - `collectible`
      - `exit`
 
+❗ Remeber to protect the .xpm too
+
 5. **Keyboard Handling**:
    - **Player Movement**: Implement keyboard controls to move the player within the game.
 
